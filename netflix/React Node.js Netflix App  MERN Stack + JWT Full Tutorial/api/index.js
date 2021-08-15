@@ -1,11 +1,14 @@
 const  express = require("express")
 const mongoose = require("mongoose")
 const dotenv = require("dotenv")
+const CryptoJS = require("crypto-js")
+const authRoute = require("./routes/auth")
 
+const app= express()
 
 dotenv.config()
 
-const app= express()
+
 
 app.use(express.json())
 
@@ -17,6 +20,9 @@ mongoose.connect(process.env.MONGO_URL, {
     useCreateIndex: true
   }).then(console.log("DB connected"))
   .catch(err=>console.log(err))
+
+
+app.use("/api/auth",authRoute);
 
 const server = process.env.PORT || 5000;
 

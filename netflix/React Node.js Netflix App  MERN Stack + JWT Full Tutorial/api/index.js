@@ -1,7 +1,6 @@
 const  express = require("express")
 const mongoose = require("mongoose")
 const dotenv = require("dotenv")
-const CryptoJS = require("crypto-js")
 const authRoute = require("./routes/auth")
 
 const app= express()

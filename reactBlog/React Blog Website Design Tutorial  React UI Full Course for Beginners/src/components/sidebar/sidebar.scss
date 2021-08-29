@@ -1,5 +1,87 @@
 @import "../general.scss";
 
-.sidebar{
-    flex: 3;
+.sidebar {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin: 10px;
+  width: 100%;
+
+  li{
+ 
+    display: inline-block;
+    width: 50%;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+  }
+
+  &-about {
+    &-title {
+      @include sidebar-title(
+        center,
+        1px solid gray,
+        1px solid gray,
+        10px,
+        80%,
+        $secondary-font,
+        1.2rem,
+        $primary-color,
+        500
+      );
+    }
+
+    &-img {
+        width:81%;
+        object-fit: cover;
+    }
+  }
+  &-categories {
+    &-title {
+      @include sidebar-title(
+        center,
+        1px solid gray,
+        1px solid gray,
+        10px,
+        80%,
+        $secondary-font,
+        1.2rem,
+        $primary-color,
+        500
+      );
+    }
+
+    &-list {
+     
+      color: blueviolet;
+      margin-top: 10px;
+    }
+  }
+
+  &-social {
+    margin-top: 15px;
+
+    &-title {
+      @include sidebar-title(
+        center,
+        1px solid gray,
+        1px solid gray,
+        10px,
+        80%,
+        $secondary-font,
+        1.2rem,
+        $primary-color,
+        500
+      );
+    }
+
+    &-list {
+      @include flex-display(flex, center, space-evenly);
+      font-size: 16px;
+      margin-left: 15px;
+      margin-top: 10px;
+    }
+  }
 }

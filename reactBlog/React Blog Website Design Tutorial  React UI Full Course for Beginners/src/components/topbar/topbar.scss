@@ -1,0 +1,100 @@
+@import "../general.scss";
+
+.top-header{
+    border-bottom: 2px solid $primary-color;
+    background: rgb(39,107,231);
+    background: linear-gradient(90deg, rgba(39,107,231,1) 14%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 66%, rgba(39,107,231,1) 82%);
+    
+    .container{
+        @include flex-display(flex, center, space-between);
+      
+        .top-social-menu{
+            display: flex;
+            
+            li{
+                margin: 0 1rem;
+                padding: 1rem;
+                font-size: 2rem;
+                transition: all .5s;
+    
+                .topIcon{
+                   outline: 0em;
+
+                }
+                i{
+                   
+                       
+                }
+                &:hover {
+                    color:$primary-color;
+                    animation: mymove 3s infinite;
+                }
+            }
+
+            @keyframes mymove {
+                50% {transform: rotate(360deg);}
+              }
+        }
+
+        .top-navbar{
+
+            &-list{
+                display: flex;
+                font-family: $primary-font;
+                font-size: 1.5rem;
+                
+                li{
+                    padding: 2px;
+                    line-height: 8rem;
+                    letter-spacing: 1px;
+                    position: relative;
+                    transition: all .5s;
+                    color: $light-color;
+                    margin: auto 2rem;
+
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+
+                
+            }
+     }
+
+        .top-navbar-search{
+        
+
+            input[type="search"], button[type="submit"] {
+                border: none;
+                background-color: transparent;
+                color: $light-color;
+              }
+        
+              input[type="search"] {
+                border-bottom: 1px solid $primary-color;
+                padding: .5rem;
+             
+              }
+        
+              button[type="submit"] {
+                margin-left: -5rem;
+              }
+
+             
+        }
+
+        .top-navbar-profile {
+            img{ 
+                margin-left: 5px;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+
+    }
+
+    
+}

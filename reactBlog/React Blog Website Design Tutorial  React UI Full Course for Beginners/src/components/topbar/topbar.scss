@@ -3,7 +3,7 @@
 .top-header{
     border-bottom: 2px solid $primary-color;
     background: rgb(39,107,231);
-    background: linear-gradient(90deg, rgba(39,107,231,1) 14%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 66%, rgba(39,107,231,1) 82%);
+background: linear-gradient(90deg, rgba(39,107,231,1) 15%, rgba(0,0,0,1) 27%, rgba(0,0,0,1) 73%, rgba(39,107,231,1) 82%);
     
     .container{
         @include flex-display(flex, center, space-between);

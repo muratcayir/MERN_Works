@@ -1,0 +1,33 @@
+@import "../general.scss";
+
+.header {
+    background: rgb(39,107,231);
+background: radial-gradient(circle, rgba(39,107,231,1) 16%, rgba(0,0,0,1) 56%, rgba(0,0,0,1) 67%, rgba(39,107,231,1) 82%);
+  &-title {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $secondary-font;
+    color: rgb(255, 255, 255);
+
+    h2{
+        position: absolute;
+        top: 12%;
+        font-size: 100px;
+    }
+
+    h3{
+        position: absolute;
+        top: 10.5%;
+        font-size: 20px;
+    }
+  }
+
+  &-img {
+   width: 100%;
+   height: 450px;
+   margin-top: 140px;
+   object-fit: cover;
+  }
+}

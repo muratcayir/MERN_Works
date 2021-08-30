@@ -4,6 +4,7 @@
     border-bottom: 2px solid $primary-color;
     background: rgb(39,107,231);
     background: linear-gradient(90deg, rgba(39,107,231,1) 15%, rgba(0,0,0,1) 27%, rgba(0,0,0,1) 73%, rgba(39,107,231,1) 82%);
+    z-index: 999;
     
     .container{
         @include flex-display(flex, center, space-between);
@@ -78,8 +79,8 @@
         .top-navbar-profile {
             img{ 
                 margin-left: 5px;
-                width: 40px;
-                height: 40px;
+                width: 60px;
+                height: 60px;
                 border-radius: 50%;
                 object-fit: cover;
             }

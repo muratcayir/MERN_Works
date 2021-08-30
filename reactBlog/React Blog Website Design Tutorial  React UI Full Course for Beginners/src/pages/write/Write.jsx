@@ -4,7 +4,7 @@ export default function Write() {
 
     return (
       <div className="write">
-        <img className="writeImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVCmsoH0cxlmR_TRXYjPky6CE0LvO_GlZynU8-t9AnI9k0nvM3K7kiA3VTkRTSAxCTuFo&usqp=CAU" alt="" />
+        <img className="writeImg" src="https://p4.wallpaperbetter.com/wallpaper/856/891/732/windows-backgrounds-nature-for-pc-1920x1200-wallpaper-preview.jpg" alt="" />
         <form className="write-form">
           <div className="write-form-group">
             <label htmlFor="fileInput"> <i className="writeIcon fas fa-plus"></i></label>

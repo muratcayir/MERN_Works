@@ -10,7 +10,7 @@ export default function Sidebar() {
           </div>
           <div className="sidebar-about-img">
             <img
-              src="https://images7.alphacoders.com/635/thumb-1920-635014.jpg"
+              src="https://c.wallhere.com/photos/a4/64/snake-95560.jpg!d"
               alt=""
             />
             <p>

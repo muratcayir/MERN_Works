@@ -1,0 +1,62 @@
+@import "../../components/general.scss";
+
+.register{ 
+    @include flex-display(flex, center, center); 
+    height: calc(100vh - 50px); 
+    flex-direction: column;
+    background: url("https://images4.alphacoders.com/485/thumb-1920-48578.jpg");
+    background-size: cover;
+
+    &-title{
+      font-size: 50px;
+      color: $light-color;
+    }
+
+    &-form{
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+
+      label{
+        margin: 10px 0;
+      }
+
+      .register-input{
+        padding: 10px;
+        background-color: white;
+        border: none;
+              
+      }
+
+      .register-button{
+          margin-top: 20px;
+          cursor: pointer;
+          padding: 10px;
+          background-color: white;
+          border: none;
+          border-radius: 10px;
+
+          &:disabled{
+            cursor: not-allowed;
+            background-color: rgb(252, 173, 173);
+          }
+      }
+   
+    }
+
+    .login-button{
+        position: absolute;
+        
+        width: 70px;
+        height: 70px;
+        top: 100px;
+        right: 20px;
+        background-color: rgb(26, 95, 206);
+        cursor: pointer;
+        border: none;
+        padding: 20px 40px 20px 15px;
+        color: white;
+        font-size: 1.5rem;
+        border-radius: 50%;
+    }
+}

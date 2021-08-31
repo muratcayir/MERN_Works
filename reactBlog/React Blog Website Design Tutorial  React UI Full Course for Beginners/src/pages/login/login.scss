@@ -1,0 +1,58 @@
+@import "../../components/general.scss";
+
+.login{ 
+    @include flex-display(flex, center, center); 
+    height: calc(100vh - 50px); 
+    flex-direction: column;
+    background: url("https://images6.alphacoders.com/358/358970.jpg");
+    background-size: cover;
+
+    &-title{
+      font-size: 50px;
+      color: $light-color;
+    }
+
+    &-form{
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+
+      label{
+        margin: 10px 0;
+      }
+
+      .login-input{
+        padding: 10px;
+        background-color: white;
+        border: none;
+              
+      }
+
+      .login-button{
+          margin-top: 20px;
+          cursor: pointer;
+          padding: 10px;
+          background-color: white;
+          border: none;
+          border-radius: 10px;
+
+          &:disabled{
+            cursor: not-allowed;
+            background-color: rgb(252, 173, 173);
+          }
+      }
+   
+    }
+
+    .login-register-button{
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        background-color: teal;
+        cursor: pointer;
+        border: none;
+        padding: 10px;
+        color: white;
+        border-radius: 10px;
+    }
+}

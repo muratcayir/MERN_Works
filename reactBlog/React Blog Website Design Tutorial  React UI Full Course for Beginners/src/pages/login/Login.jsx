@@ -1,24 +1,17 @@
-import React from 'react'
+import "./login.scss"
 
 export default function Login() {
     return (
-        <div>
-            <label>Profile Picture</label>
-          <div className="settingsPP">
-            <img
-              src=""
-              alt=""
-            />
-            <label htmlFor="fileInput">
-              <i className="settingsPPIcon far fa-user-circle"></i>
-            </label>
-            <input
-              type="file"
-              id="fileInput"
-              style={{ display: "none" }}
-              
-            />
-          </div>
+        <div className="login">
+           <span className="login-title">Login</span>
+           <form  className="login-form">
+               <label >Email</label>
+               <input type="text" className="login-input"placeholder="Enter your email..."/>   
+               <label >Password</label>
+               <input type="password" className="login-input"placeholder="Enter your password..."/>
+               <button className="login-button">Register</button>   
+            </form>  
+            <button className="login-register-button">Register</button>   
         </div>
     )
 }

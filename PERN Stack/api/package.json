@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^15.0.0",
+    "express": "^4.17.2",
+    "helmet": "^4.6.0",
+    "joi": "^17.4.2",
+    "mongoose": "^6.0.12",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.14",
+    "winston": "^3.3.3"
+  }
+}
